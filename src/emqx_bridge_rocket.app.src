@@ -5,7 +5,7 @@
   {registered,[]},
   {applications,[kernel,stdlib,rocketmq]},
   {mod,{emqx_bridge_rocket_app,[]}},
-  {env, []},
+  {env, []}
  ]}.
 
  
