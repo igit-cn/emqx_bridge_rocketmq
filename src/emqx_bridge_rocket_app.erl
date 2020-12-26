@@ -13,16 +13,12 @@
 
 -include("../include/emqx_bridge_rocket.hrl").
 
-
 -export([start/2, stop/1, prep_stop/1]).
 
--vsn("4.2.1").
 
 start(_Type, _Args) ->
   {ok, _} = application:ensure_all_started(rocketmq),
-
   ClientId = emqx_bridge_rocket,
-
 %%  获取rockmq的服务配置
   Servers = application:get_env(emqx_bridge_rocket, servers, [{"localhost", 9876}]),
 %%  启动

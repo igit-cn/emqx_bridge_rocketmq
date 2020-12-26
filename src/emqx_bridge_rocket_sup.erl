@@ -14,7 +14,6 @@
 
 -export([init/1]).
 
--vsn("4.2.1").
 
 start_link() ->
   supervisor:start_link({local, emqx_bridge_rocket_sup}, emqx_bridge_rocket_sup, []).

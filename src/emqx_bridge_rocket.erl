@@ -28,8 +28,6 @@
 
 -import(proplists, [get_value/2]).
 
--vsn("4.2.1").
-
 register_metrics() ->
   [emqx_metrics:new(MetricName) || MetricName
     <- ['bridge.rocket.client_connected', %% 连接
